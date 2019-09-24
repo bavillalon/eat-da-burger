@@ -1,11 +1,18 @@
 
 body{
-background: linear-gradient(
+background: repeating-linear-gradient(
   to bottom,
   #FF780F,
-  #FF780F 50%,
-  #ff9a4d 50%,
-  #ff9a4d
+  #FF780F 100px,
+  #ff9a4d 100px,
+  #ff9a4d 200px
 );
 }
 
+img{
+    max-height: 400px;
+}
+
+.burger:hover {
+    cursor: pointer;
+  }
