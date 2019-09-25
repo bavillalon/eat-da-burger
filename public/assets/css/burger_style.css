@@ -7,6 +7,7 @@ background: repeating-linear-gradient(
   #ff9a4d 100px,
   #ff9a4d 200px
 );
+box-sizing: border-box;
 }
 
 img{
@@ -15,4 +16,8 @@ img{
 
 .burger:hover {
     cursor: pointer;
+  }
+
+  .burgerdiv{
+    background-color: #e9ecef9d;
   }
