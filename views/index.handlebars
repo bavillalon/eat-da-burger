@@ -1,17 +1,21 @@
 <div class="container">
     <div class="jumbotron">
-        <h1>Welsome to Eat-Da-Burger!</h1>
+        <h1>Welcome to Eat-Da-Burger!</h1>
 
         <h4>Enter a name for your burger below and prepare to DEVOUR it.</h4>
 
-        <div>
-            <img class='img-fluid' src="/assets/img/homer_burger.jpg">
-            <textarea id="newBurger" rows="4" cols="50">
-
-            </textarea>
-            <button type="button" id="createBurger" class="btn btn-lg btn-success">
-                <h4>Submit to DEVOUR</h4>
-            </button>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 p-3">
+                <img class='img-fluid' src="/assets/img/homer_burger.jpg">
+            </div>
+            <div class="col-md-6 p-3">
+                <textarea id="newBurger"  class="w-100" rows="4"> </textarea>
+                <br>
+                <br>
+                <button type="button" id="createBurger" class="btn btn-lg btn-success">
+                    <h4>Submit to DEVOUR</h4>
+                </button>
+            </div>
         </div>
 
     </div>
@@ -35,7 +39,7 @@
             <ol>
                 {{#each burgers}}
                 {{#if devoured}}
-                <li class="burger" data-id={{id}}>
+                <li class="devoured" data-id={{id}}>
                     {{burger_name}}
                 </li>
                 {{/if}}
