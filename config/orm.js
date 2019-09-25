@@ -1,5 +1,8 @@
 var connection=require('./connection');
-
+//custom orm to get all values in a table. the table is in the form of a string and the cb will use the resultant data.
+//insertOne takes a table name in the form of a string, and the values in the form of an objet so it avoids injection
+// update one will also take the table name as a string and the values to update and the id to find the entry as objects to avoid injection
+//for all the cb will use the resultant data depending on the model 
 var orm={
     selectAll: function(table, cb){
         var queryString="SELECT * FROM ??";

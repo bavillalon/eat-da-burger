@@ -1,4 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
+//clicking the burger will send a request ot the api to eat the burgr and update the database.
 $(function() {
     $(".burger").on("click", function(event) {
       var id = $(this).data("id");
@@ -15,6 +16,8 @@ $(function() {
       );
     });
   
+
+    //creating a burger. sendint he burger name to be updated to the api and then reloads the page with the new data.
     $("#createBurger").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
